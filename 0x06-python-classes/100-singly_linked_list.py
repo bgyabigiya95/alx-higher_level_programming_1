@@ -20,8 +20,8 @@ class Node:
         """Get/set the data of the Node."""
         return (self.__data)
 
-     @data.setter
-     def data(self, value):
+    @data.setter
+    def data(self, value):
         if not isinstance(value, int):
             raise TypeError("data must be an integer")
         self.__data = value
